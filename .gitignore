@@ -1,17 +1,43 @@
-# Ignore everything
-*
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+migrate_working_dir/
 
-# Except the specific folder (unignore folder2 and its contents)
-!build/web/
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
 
-# Ignore folder1 and folder2 to prevent them from being pushed
-build/*
-!build/web/
-!build/web/**
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
 
-# Ignore everything else in folder2 except its contents
-build/web/*
-!build/web/**
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
 
-# Explicitly ignore folder1 and folder2 to prevent them from being pushed
-build/
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
